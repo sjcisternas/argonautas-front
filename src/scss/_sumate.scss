@@ -1,0 +1,288 @@
+.aportes{
+    padding: 8% 8% 0% 8%;
+    margin-bottom: 8%;
+    display: flex;
+    gap: 5%;
+    
+    .aportes__club{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        .aportes__club-titulo{
+            margin-bottom: 3%;
+        }
+        .aportes__club-container-btn{
+            margin:auto;
+            width: 50%;
+            padding: 1.8% 2.4%;
+            background-color: $color-boton-principal;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: 0.3s;
+            &:hover{
+                background-color: #2a481b;
+            }
+        }
+    }
+    .aportes__importancia{
+        width: 50%;
+        .aportes__importancia-titulo{
+            margin-bottom: 3%;
+        }
+        .aportes__importancia-p{
+            margin-bottom: 3%;
+        }
+        .aportes__importancia-ul{
+            list-style-image: url("../multimedia/check1.png");
+            list-style-position: inside;
+            .aportes__importancia-li{
+                margin-bottom: 1%;
+                font-size: medium;
+                font-family: 'Helvetica';
+                color:$color-secundario1;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+.beneficios{
+    margin-left: 8%;
+    padding: 4%;
+    width: 84%;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    background-color: $color-terciario1;
+    .beneficios__titulo{
+        margin-bottom: 3%;
+        font-size: xx-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: $negro;
+        font-weight: bold;
+        text-align: center; 
+        font-style: italic;
+    }
+    .beneficios__container{
+        .beneficios__container-ul{
+            list-style-image: url("../multimedia/check1.png");
+            list-style-position: inside;
+            .beneficios__container-li{
+                margin-bottom: 1%;
+                font-size: medium;
+                font-family: 'Helvetica';
+                color:$color-secundario1;
+                line-height: 24px;
+                text-align: center; 
+            }
+        }
+    }
+}
+
+.contacto{
+    background-image: url('../multimedia/mtdibujo.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4.5% 8%;
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 95px);
+    .contacto__form{
+        display: flex;
+        flex-direction: column;
+        background-color: #272018;
+        padding: 3%;
+        border-radius: 10px;
+        .contacto__form-p{
+            color: $color-terciario1;
+            font-weight: 600;
+        }
+        .contacto__form-label{
+            color: $color-terciario1;
+            margin-bottom: 0.5%;
+            margin-top: 4%;
+            span{
+                color:rgb(234, 67, 67);
+            }
+        }
+        .contacto__form-input{
+            height: 5vh;
+            border-radius: 5px;
+            border: none;
+            background-color: #413e3a;
+            padding-left: 2%;
+            color: $color-secundario2;
+            transition: all 0.2s;
+            &:focus{
+                outline: none;
+                background-color: #565350;
+            }
+        }
+        .contacto__form-input:-webkit-autofill {
+            transition: all 0s;
+            -webkit-box-shadow: 0 0 0 1000px #413e3a inset;
+            -webkit-text-fill-color: $color-terciario1;
+        }
+        
+        .contacto__form-input:-webkit-autofill:focus {
+            outline:none;
+            transition: all 0s;
+            -webkit-box-shadow: 0 0 0 1000px #565350 inset;
+            -webkit-text-fill-color: $color-terciario1; 
+        }
+        .contacto__form-btn{
+            margin-right:auto;
+            margin-top: 6.5%;
+            padding: 1.8% 2.4%;
+            background-color: $color-boton-principal;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: 0.3s;
+            border: none;
+            font-family: 'Helvetica';
+            font-size: medium;
+            color:$color-principal;
+            &:hover{
+                background-color: #2a481b;
+            }
+        }
+        .contacto__form-error{
+           color: rgb(234, 67, 67);
+        }
+        .contacto__form-success{
+            color: rgb(24, 184, 88);
+        }
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1280px) {
+    .aportes{
+        .aportes__club{
+            .aportes__club-container-btn{
+                padding: 12px 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .aportes{
+        padding-top:12%;
+        .aportes__club{
+            .aportes__club-container-btn{
+                padding: 12px 20px;
+                width: 70%;
+            }
+        }
+    }
+    .contacto{
+        .contacto__form{
+            .contacto__form-btn{
+                margin-top: auto;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aportes{
+        padding-top:16%;
+        flex-direction: column;
+        .aportes__club{
+            width: 100%;
+            margin-bottom: 72px;
+            .aportes__club-container-btn{
+                margin-top: 32px;
+                margin-left: auto;
+                margin-right: 12px;
+                width: auto;
+                padding: 12px 16px;
+            }
+        }
+        .aportes__importancia{
+            width: 100%;
+            .aportes__importancia-ul{
+                list-style-type: disc;
+                .aportes__importancia-li{
+                    font-size: 14px;
+                    list-style-type: disc;
+                }
+            }
+        }
+    }
+    .contacto{
+        .contacto__form{
+            padding: 5%;
+            height: calc(100vh - 180px);
+            .contacto__form-label{
+                font-size: 14px;
+            }
+            .contacto__form-p{
+                margin-bottom: 24px;
+            }
+            .contacto__form-btn{
+                padding: 12px 16px;
+            }
+        }
+    }
+    .contacto{
+        .contacto__form{
+            .contacto__form-btn{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .aportes{
+        padding-top: 22%;
+        .aportes__club{
+            .aportes__club-titulo{
+                font-size: x-large;
+            }
+            .aportes__club-container-btn{
+                margin-top: 32px;
+                margin-left: auto;
+                margin-right: auto;
+                width: auto;
+                padding: 12px 16px;
+            }
+        }
+        .aportes__importancia{
+            .aportes__importancia-titulo{
+                font-size: x-large;
+            }
+        }
+    }
+    .beneficios{
+        .beneficios__titulo{
+            font-size: x-large;
+        }
+        .beneficios__container{
+            .beneficios__container-ul{
+                .beneficios__container-li{
+                    font-size: 14px; 
+                }
+            }
+        }
+    }
+    .contacto{
+        .contacto__form{
+            .contacto__form-btn{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .aportes{
+        padding-top: 26%;
+    }
+}

@@ -1,0 +1,130 @@
+.main__notas-container-loader{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 60vh;
+    flex-wrap: wrap;
+    .main__notas-loader{
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        border: 3px solid $color-secundario1;
+        border-top-color: transparent;
+        animation: spin 1.2s linear infinite;
+    }
+}
+
+.main{
+    padding: 8% 8% 0 8%;
+    margin-bottom: 6%;
+    .main__notas{
+        .main__notas-titulo{
+            margin-bottom: 3%;
+            font-style: italic;
+        }
+    }
+}
+.colaborar{
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    margin: 0 8%;
+    margin-bottom: 6%;
+    background-color:  $color-terciario1;
+    border-radius: 1rem;
+    padding: 3% 5%;
+    .colaborar__titulo{
+        font-size: xx-large;
+        margin-bottom: 2%;
+        height: auto;
+    }
+    .colaborar__btn{
+        margin-top: auto;
+        margin-left: auto;
+        padding: 1.2% 2%;
+        background-color: $color-boton-principal;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+        &:hover{
+            background-color: #2a481b;
+        }
+    }
+}
+
+/*         MEDIA QUERIES         */
+
+@media screen and (max-width: 1024px){
+    .main{
+        padding-top:12%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main{
+        padding-top: 16%;
+        .main__notas{
+            .main__notas-titulo{
+                font-size: x-large;
+                margin-bottom: 6%;
+            }
+        }
+    }
+    .colaborar{
+        height: auto;
+        padding: 5% 8%;
+        .colaborar__titulo{
+            font-size: x-large;
+        }
+        .colaborar__btn{
+            margin-top: 10%;
+            padding: 1.6% 2.4%;
+        }
+    }
+}
+
+@media screen and (max-width: 665px){
+    .colaborar{
+        .colaborar__titulo{
+            margin-bottom: 4%;
+        }
+        .colaborar__btn{
+            margin-top: 20%;
+            padding: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+    .main{
+        padding-top: 22%;
+        .main__notas{
+            .main__notas-titulo{
+                font-size: x-large;
+                margin-bottom: 8%;
+            }
+        }
+    }
+    .colaborar{
+        padding: 6% 10%;
+        .colaborar__titulo{
+            margin-bottom: 6%;
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    .colaborar{
+        .colaborar__btn{
+            margin-top: 25%;
+            padding: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .main{
+        padding-top: 26%;
+    }
+}

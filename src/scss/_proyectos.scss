@@ -1,0 +1,200 @@
+.main__proyectos{
+    padding: 8% 8% 0% 8%;
+    margin-bottom: 8%;
+    .proyectos__podcast{
+        display: flex;
+        background-color: $color-terciario1;
+        border-radius: 10px;
+        padding: 50px 40px;
+        .proyectos__podcast-container{
+            display: flex;
+            flex-direction: column;
+            margin-right: 2%;
+            width: 70%;
+            .proyectos__podcast-container-titulo{
+                margin-bottom: 3%;
+                font-size: x-large;
+            }
+            .proyectos__podcast-container-btn{
+                margin-top: auto;
+                margin-right: auto;
+                padding: 1.2% 2%;
+                background-color: $color-boton-principal;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 4px;
+                transition: 0.3s;
+                &:hover{
+                    background-color: #2a481b;
+                }
+            }
+        }
+        .proyectos__podcast-img {
+            object-fit: cover;
+            width: 30%;
+            border-radius: 10px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+    }
+}
+.previos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 8%;
+    margin-bottom: 10%;
+    .previos__titulo{
+        margin-bottom: 5%;
+        font-size: xx-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: $negro;
+        font-weight: bold;
+    }
+    .previos__revista{
+        display: flex;
+        height: 50vh;
+        .previos__revista-img{
+            object-fit: cover;
+            width: 30%;
+            border-radius: 10px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .previos__revista-container{
+            display: flex;
+            flex-direction: column;
+            width: 58%;
+            margin-left: 2%;
+            .previos__revista-container-titulo{
+                margin-bottom: 3%;
+                font-size: x-large;
+            }
+            .previos__revista-container-btn{
+                margin: auto 5% 3% auto;
+                padding: 1.2% 2%;
+                background-color: $color-boton-principal;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 4px;
+                transition: 0.3s;
+                &:hover{
+                    background-color: #2a481b;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .main__proyectos{
+        .proyectos__podcast{
+            .proyectos__podcast-container{
+                display: grid;
+                .proyectos__podcast-container-btn{
+                    justify-self: end;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1322px) {
+    .main__proyectos{
+        .proyectos__podcast{
+            .proyectos__podcast-container{
+                .proyectos__podcast-container-btn{
+                    margin-top: 62px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .main__proyectos{
+        .proyectos__podcast{
+            padding: 40px;
+            .proyectos__podcast-container{
+                width: 60%;
+                .proyectos__podcast-container-btn{
+                    justify-self: end;
+                }
+            }
+            .proyectos__podcast-img{
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .main__proyectos{
+        .proyectos__podcast{
+            padding: 40px;
+            .proyectos__podcast-container{
+                width: 100%;
+                .proyectos__podcast-container-btn{
+                    margin-left: auto;
+                    margin-right: 0;
+                    justify-self: end;
+                }
+            }
+            .proyectos__podcast-img{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .main__proyectos{
+        padding-top:12%;
+        .proyectos__podcast{
+            .proyectos__podcast-container{
+                .proyectos__podcast-container-btn{
+                    padding: 10px 16px;
+                }
+            }
+        }
+    }
+    .previos{
+        .previos__revista{
+            .previos__revista-container{
+                width: 100%;
+                .previos__revista-container-btn{
+                    padding: 10px 16px;
+                }
+            }
+            .previos__revista-img{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main__proyectos{
+        padding-top: 16%;
+        margin-bottom: 78px;
+    }
+    .previos{
+        .previos__titulo{
+            margin-bottom: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main__proyectos{
+        padding-top: 22%;
+        margin-bottom: 68px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .main__proyectos{
+        padding-top: 26%;
+    }
+}

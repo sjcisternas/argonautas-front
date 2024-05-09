@@ -1,0 +1,191 @@
+.quienes{
+    padding: 8% 8% 6% 8%;
+    .quienes__titulo{
+        margin-bottom: 3%;
+    }
+    .quienes__p{
+        margin-bottom: 1%;
+    }
+}
+
+.nosotros{
+    padding: 0 8% 8% 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .nosotros__card{
+        width: 48%;
+        margin-bottom: 3%;
+        background-color: $color-terciario1;
+        padding: 2%;
+        border-radius: 10px;
+        .nosotros__card-titulo{
+            font-size: xx-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: $negro;
+            font-weight: bold;
+            margin-bottom: 1.5%;
+        }
+        .nosotros__card-rol{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: large;
+            color: $color-secundario1;
+            font-weight: bold;
+            margin-bottom: 3%;
+        }
+        .nosotros__card-container{
+            display: flex;
+            gap: 3%;
+            .nosotros__card-img{
+                width:25%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .nosotros{
+        .nosotros__card{
+            .nosotros__card-titulo{
+                font-size: x-large;
+            }
+            .nosotros__card-rol{
+                margin-bottom: 20px;
+                font-size: 16px;
+            }
+            .nosotros__card-container{
+                p{
+                    font-size: 14px;
+                }
+                .nosotros__card-img{
+                    width: 30%;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .quienes{
+        padding-top:12%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nosotros{
+        .nosotros__card{
+            .nosotros__card-titulo{
+                font-size: 20px;
+            }
+            .nosotros__card-rol{
+                margin-bottom: 20px;
+                font-size: 14px;
+            }
+            .nosotros__card-container{
+                p{
+                    font-size: 12px;
+                }
+                .nosotros__card-img{
+                    width: 35%;
+                    height: 80%;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nosotros{
+        flex-direction: column;
+        .nosotros__card{
+            width: 100%;
+            padding: 3%;
+            .nosotros__card-titulo{
+                font-size: x-large;
+            }
+            .nosotros__card-rol{
+                margin-bottom: 20px;
+                font-size: 16px;
+            }
+            .nosotros__card-container{
+                p{
+                    font-size: 14px;
+                }
+                .nosotros__card-img{
+                    width: 25%;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .quienes{
+        padding-top: 16%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nosotros{
+        .nosotros__card{
+            .nosotros__card-container{
+                .nosotros__card-img{
+                    width: 30%;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .quienes{
+        padding: 22% 4% 6% 4%;
+        margin-bottom: 48px;
+    }
+    .nosotros{
+        padding: 0 4% 8% 4%;
+        .nosotros__card{
+            .nosotros__card-titulo{
+                font-size: 20px;
+            }
+            .nosotros__card-rol{
+                margin-bottom: 20px;
+                font-size: 14px;
+            }
+            .nosotros__card-container{
+                p{
+                    font-size: 12px;
+                }
+                .nosotros__card-img{
+                    width: 35%;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .quienes{
+        padding-top: 26%;
+    }
+    .nosotros{
+        .nosotros__card{
+            padding:5%;
+            margin-bottom: 24px;
+            .nosotros__card-titulo{
+                margin-bottom: 8px;
+            }
+            .nosotros__card-img{
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+@import "variables";
+@import "footer";
+@import "header";
+@import "home";
+@import "cardhome";
+@import "proyectos";
+@import "sumate";
+@import "nosotros";
+@import "notas";
+@import "nota";
+@import "error404";
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+
+h1{
+    color:$color-principal;
+    display: inline-block;
+    margin-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 0.5rem
+}
+
+h2{
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: $negro;
+    font-weight: bold;
+    
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: $color-secundario1;
+    font-weight: bold;
+}
+
+h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: $negro;
+    font-weight: bold;
+}
+
+p{
+    font-size: medium;
+    font-family: 'Helvetica';
+    color:$color-secundario1;
+    line-height: 24px;   
+}
+
+a{
+    font-family: 'Helvetica';
+    text-decoration:none;
+    color:$color-principal;
+}
+
+body{
+    background-color: $color-secundario2;
+}
+
+@media screen and (max-width: 768px) {
+    p{
+        font-size: 14px;
+    }
+    a{
+        font-size: 14px;
+    }
+}
