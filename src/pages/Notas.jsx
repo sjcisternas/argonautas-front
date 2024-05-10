@@ -117,7 +117,7 @@ const Notas = () => {
                                 </div>
                               </Link>
                           </div>  
-                          <img src={`http://localhost:4000/${ultima.image}`} alt={ultima.title} className='notaprincipal__img'/>
+                          <img src={`https://intuitive-adventure-production.up.railway.app/${ultima.image}`} alt={ultima.title} className='notaprincipal__img'/>
                       </article>
                   </main>
 
@@ -139,7 +139,7 @@ const Notas = () => {
                       previasrev.map((item) => (
                         <Link to={`/notas/nota/${item._id}`}>
                         <div className='cards__card' data-aos='fade-up' data-aos-anchor-placement='top-bottom' key={item.title}>
-                          <img src={`http://localhost:4000/${item.image}`} alt={item.title} className='cards__card-img'/>
+                          <img src={`https://intuitive-adventure-production.up.railway.app/${item.image}`} alt={item.title} className='cards__card-img'/>
                           <div className='cards__card-container'>
                             <h4 className='cards__card-title'>{item.title}</h4>
                             {item.author.map((item) => (
@@ -156,7 +156,7 @@ const Notas = () => {
                       filtradas.map((item) => (
                         <Link to={`/notas/nota/${item._id}`}>
                         <div className='cards__card' data-aos='fade-up' data-aos-anchor-placement='top-bottom' key={item.title}>
-                          <img src={`http://localhost:4000/${item.image}`} alt={item.title} className='cards__card-img'/>
+                          <img src={`https://intuitive-adventure-production.up.railway.app/${item.image}`} alt={item.title} className='cards__card-img'/>
                           <div className='cards__card-container'>
                             <h4 className='cards__card-title'>{item.title}</h4>
                             {item.author.map((item) => (

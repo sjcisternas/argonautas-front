@@ -28,7 +28,7 @@ const Nota = () => {
                 ))}
             </div>
             <img src={logo} alt="" className='portada__logo'/>
-            <img src={`http://localhost:4000/${image}`} alt={title} className='portada__img'/>
+            <img src={`https://intuitive-adventure-production.up.railway.app/${image}`} alt={title} className='portada__img'/>
         </main>
         <article className='notabody'>
             {body.map((item) => (
