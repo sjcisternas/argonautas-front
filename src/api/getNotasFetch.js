@@ -1,7 +1,7 @@
 export const getNotasFetch = async () => {
     try{
         //api
-        const url = 'http://localhost:4000/api/v1/notas';
+        const url = 'https://intuitive-adventure-production.up.railway.app/api/v1/notas';
 
         //rta y parseo
         const res = await fetch(url);

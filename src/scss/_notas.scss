@@ -1,17 +1,19 @@
-.container-loader{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 100vw;
-    height: calc(100vh - 45px);
-    flex-wrap: wrap;
-    .loader{
-        width: 60px;
-        height: 60px;
-        border-radius: 100%;
-        border: 3px solid $color-secundario1;
-        border-top-color: transparent;
-        animation: spin 1.2s linear infinite;
+.container__notas{
+    .container-loader{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100vw;
+        height: calc(100vh - 45px);
+        flex-wrap: wrap;
+        .loader{
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            border: 3px solid $color-secundario1;
+            border-top-color: transparent;
+            animation: spin 1.2s linear infinite;
+        }
     }
 }
 

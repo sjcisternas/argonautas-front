@@ -1,6 +1,6 @@
 export const colabFetch = async (form) => {
     try{
-        const url = 'http://localhost:4000/api/v1/auth/subscription';
+        const url = 'https://intuitive-adventure-production.up.railway.app/api/v1/auth/subscription';
 
         const params = {
             method: 'POST',

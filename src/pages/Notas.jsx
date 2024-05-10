@@ -95,7 +95,7 @@ const Notas = () => {
     <>
       <div className='container__notas'>
         <>
-          {navigation.state === 'loading' ? 
+          { navigation.state === 'loading' ? 
             <div className='container-loader'>
               <div className='loader'></div>
             </div>

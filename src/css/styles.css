@@ -979,7 +979,7 @@
     display: none;
   }
 }
-.container-loader {
+.container__notas .container-loader {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -987,7 +987,7 @@
   height: calc(100vh - 45px);
   flex-wrap: wrap;
 }
-.container-loader .loader {
+.container__notas .container-loader .loader {
   width: 60px;
   height: 60px;
   border-radius: 100%;
